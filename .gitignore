@@ -1,0 +1,22 @@
+cat > .gitignore << 'EOF'
+# Terraform local dirs
+.terraform/
+.terraform.lock.hcl
+
+# State files
+terraform.tfstate
+terraform.tfstate.backup
+crash.log
+*.tfstate
+*.tfstate.*
+
+# Sensitive variable files
+terraform.tfvars
+*.tfvars
+*.tfvars.json
+
+# Editor/OS junk
+.vscode/
+.idea/
+.DS_Store
+EOF
